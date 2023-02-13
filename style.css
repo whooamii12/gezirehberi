@@ -76,6 +76,7 @@ a {
     width: 100%;
     opacity: 0.9;
     height: 70px;
+    z-index: 9;
 } 
 .navbar > .nav-btn {
     display: none;
@@ -131,6 +132,12 @@ img {
   text-align: center;
   color: #7A4D1D;
 }
+.item .right-content #baslik {
+  font-size: 25px;
+  margin-bottom: 5px;
+  text-align: center;
+  color: #7A4D1D;
+}
 .item .center-content .main-button {
   position: absolute;
   right: 0;
@@ -176,7 +183,7 @@ img {
   color: #fff;
   border: 1px solid #7A4D1D;
 }
-.tarih h1{
+ h2{
   color: #7A4D1D;
     text-align: center;
     font-size: 3rem;
@@ -235,7 +242,7 @@ img {
   .navbar > #nav-check:checked ~ .nav-links {
     height: calc(100vh - 50px);
   }
-  .tarih .row h1{
+  .tarih .row h2{
     font-size: 2.4rem;
   }
   .lead {
@@ -257,3 +264,105 @@ img {
 }
 }
 /* RESPONSİVE */
+
+/* SSS */
+.accordion-style .card:last-child {
+  margin-bottom: 0;
+}
+.accordion-style .card-header {
+  border: 0;
+  background: none;
+  padding: 0;
+  border-bottom: none;
+}
+.accordion-style .btn-link {
+  color: #ffffff;
+  position: relative;
+  background: #5c3b19;
+  border: 1px solid #15395a;
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 3px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  text-align: left;
+  white-space: normal;
+  box-shadow: none;
+  padding: 15px 55px;
+  text-decoration: none;
+}
+.accordion-style .btn-link:hover {
+  text-decoration: none;
+}
+.accordion-style .btn-link.collapsed {
+  background: #5c3b19;
+  border: 1px solid #15395a;
+  color: #fff;
+  border-radius: 3px;
+}
+.accordion-style .btn-link.collapsed:after {
+  background: none;
+  border-radius: 3px;
+  content: "+";
+  left: 16px;
+  right: inherit;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+  height: 26px;
+  transform: none;
+  width: 26px;
+  top: 15px;
+  text-align: center;
+  background-color: #fff;
+  color: #7A4D1D;
+}
+.accordion-style .btn-link:after {
+  background: #fff;
+  border: none;
+  border-radius: 3px;
+  content: "-";
+  left: 16px;
+  right: inherit;
+  font-size: 20px;
+  font-weight: 600;
+  height: 26px;
+  line-height: 26px;
+  transform: none;
+  width: 26px;
+  top: 15px;
+  position: absolute;
+  color: #7A4D1D;
+  text-align: center;
+}
+.accordion-style .card-body {
+  padding: 20px;
+  border-top: none;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-left: 1px solid #15395a;
+  border-right: 1px solid #15395a;
+  border-bottom: 1px solid #15395a;
+}
+@media screen and (max-width: 767px) {
+  .accordion-style .btn-link {
+      padding: 15px 40px 15px 55px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .accordion-style .btn-link {
+      padding: 15px 20px 15px 55px;
+  }
+}
+.card-style1 {
+  box-shadow: 0px 0px 10px 0px rgb(89 75 128 / 9%);
+}
+.border-0 {
+  border: 0!important;
+}
+
+.card-body .item .right-content ul li {
+  width: 102%;
+  font-size: 19px;
+}
